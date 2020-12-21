@@ -5,10 +5,10 @@ import { createDote } from '../reducers/anecdoteReducer'
 const AnecdoteForm = () => {
   const dispatch = useDispatch()
 
-  const addDote = (event) => {
-    event.preventDefault()
-    const content = event.target.dote.value
-    event.target.dote.value = ''
+  const addDote = async (e) => {
+    e.preventDefault()
+    const content = e.target.dote.value
+    e.target.dote.value = ''
     dispatch(createDote(content))
   }
 
