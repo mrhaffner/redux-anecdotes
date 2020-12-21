@@ -30,10 +30,10 @@ export const voteNotification = (content, time) => {
     }
 }
 
-export const removeNotification = () => {
-    return {
-        type: 'REMOVE'
-    }
-}
+// export const removeNotification = () => {
+//     return {
+//         type: 'REMOVE'
+//     }
+// }
 
 export default notificationReducer
